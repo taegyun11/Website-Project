@@ -62,66 +62,13 @@ a:hover{
     display: flex;
     justify-content: center;
 }
-
-@media screen and (max-width:1276px) {
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 8px 12px;
-        margin-bottom:5px;
-        }    
-    .navbar__menu{
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-    .navbar__menu li{
-        width: 100%;
-        text-align: center;
-        margin: 0px;
-        font-size: 20px;
-    }
-    .navbar__menu :hover{
-        background-color: #d49466;
-        border-radius: 4px;
-    }
-
-    .navbar__menu img{
-        position: block;
-        display: none;
-    }
-
-    .lucid_image{
-        margin-top: 100px;
-    }
-    .bottom_text{
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        padding: 8px 12px;
-        font-size: 10px;
-    }
-    .map_dis{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navbar__menu.active,
-    .navbar__icons.active{
-        display: flex;
-    }
-    .navbar__toogleBtn{
-        display: block;
-        opacity: 100%;
-    }
-    #nav li:hover ul{
-        display: none;
-    }
-
+.navbar__toogleBtn{
+    position: absolute;
+    right: 32px;
+    display: none;
+    top: 5px;    
 }
+
 
 .logo_img{
     width: 200px;
@@ -156,6 +103,9 @@ a:hover{
 
 .map_description{
     margin-top: 15px;
+}
+.small_map{
+    display: none;
 }
 
 .contact_in{
@@ -219,11 +169,7 @@ a:hover{
     border-radius: 50px;
 }
 
-.navbar__toogleBtn{
-    position: absolute;
-    right: 32px;
-    top: 5px;    
-}
+
 
 #nav ul{
     list-style: none;
@@ -287,51 +233,89 @@ a:hover{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+.carousel-inner-position{
+    margin:auto;
+    height: auto;
+    width: 90%;
+}
+
+.trainer_img{
+    width: 70%;
+    height: auto;
+}
 
 
 
+@media screen and (max-width:1276px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+        margin-bottom:5px;
+        }    
+    .navbar__menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar__menu li{
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        font-size: 20px;
+    }
+    .navbar__menu :hover{
+        background-color: #d49466;
+        border-radius: 4px;
+    }
 
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-    display: flex;
-    margin-left: 100px;
-    margin-bottom: 25px;
-    margin-top: 100px;
+    .navbar__menu img{
+        position: block;
+        display: none;
+    }
 
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  .flip-card-back {
-    background-color: #2980b9;
-    color: white;
-    transform: rotateY(180deg);
-  }
+    .lucid_image{
+        margin-top: 100px;
+    }
+    .bottom_text{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+    .map_dis{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar__menu.active,
+    .navbar__icons.active{
+        display: flex;
+    }
+    .navbar__toogleBtn{
+        display: block;
+        opacity: 100%;
+    }
+    #nav li:hover ul{
+        display: none;
+    }
+    .big_map{
+        display: none;
+    }
+    .small_map{
+        display: block;
+    }
+    .about_page_media{
+        flex-direction: column;
+    }   
+    .about_picture2{
+        width: 400px;
+    }
+    .about_picture{
+        width: 400px;
+    }
+}
