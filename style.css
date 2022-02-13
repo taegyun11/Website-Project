@@ -1,0 +1,337 @@
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #000;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+
+.navbar__menu{
+    display: flex;
+    justify-content:space-evenly;
+    list-style: none;
+    padding: 8px 12px;
+    align-items: center;
+    margin: 8px 12px;
+    margin-right: 25px;
+}
+
+.navbar__menu li{
+    margin: 20px;
+    padding: 8px 20px;
+    font-size: 25px;
+    font-weight: 1000;
+}
+
+.navbar__menu li:hover{
+    background-color: #d49466;
+    border-radius: 6px;
+    
+}
+
+.navbar__menu img :hover{
+    background-color: white;
+    border-radius: 4px;
+}
+
+.navbar__icons{
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar__icons li{
+    padding: 8px 12px;
+}
+
+.lucid_image{
+
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:1276px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+        margin-bottom:5px;
+        }    
+    .navbar__menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar__menu li{
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        font-size: 20px;
+    }
+    .navbar__menu :hover{
+        background-color: #d49466;
+        border-radius: 4px;
+    }
+
+    .navbar__menu img{
+        position: block;
+        display: none;
+    }
+
+    .lucid_image{
+        margin-top: 100px;
+    }
+    .bottom_text{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+    .map_dis{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar__menu.active,
+    .navbar__icons.active{
+        display: flex;
+    }
+    .navbar__toogleBtn{
+        display: block;
+        opacity: 100%;
+    }
+    #nav li:hover ul{
+        display: none;
+    }
+
+}
+
+.logo_img{
+    width: 200px;
+    height: 200px;
+}
+
+.fall_image{
+    opacity: 100%;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.bottom_text{
+    padding-bottom: 50px;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+	font-family: Georgia, serif;;
+	font-size: 20px;
+    margin-top: 30px;
+}
+
+.map_dis{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+    border: black;
+}
+
+.map_description{
+    margin-top: 15px;
+}
+
+.contact_in{
+    margin-top: 100px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contact_form{
+    align-items: center;
+    width: 120%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+}
+
+.input_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    margin-bottom: 50px;
+    
+
+}
+
+.contact_form_txt{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+
+}
+.contact_form_textarea{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    padding-top: 60px;
+}
+
+.contact_form_btn{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border-radius: 50px;
+}
+
+.navbar__toogleBtn{
+    position: absolute;
+    right: 32px;
+    top: 5px;    
+}
+
+#nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 124px;
+    text-align: center;
+    opacity: 0;
+}
+
+#nav ul li{
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav li:hover ul{
+    opacity: 1;
+}
+
+#nav li{
+    position: relative;
+    float: left;
+    margin: 5px 30px;
+    padding: 0;
+}
+
+#nav li a{
+    display: block;
+    padding: 7px 8px;
+    margin: 0;
+
+}
+
+.mt-10{
+    margin-top:10rem;
+}
+
+.mt-7{
+    margin-top:7rem;
+}
+.about_picture{
+    width: 580px;
+    height: auto;
+}
+
+.about_picture2{
+    width: 614px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-width: 2px;
+}
+
+.about_text{
+    background-color: #FFCC56;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 25px;
+    margin-top: 100px;
+
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
